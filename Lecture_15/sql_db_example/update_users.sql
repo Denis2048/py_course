@@ -1,0 +1,1 @@
+UPDATE user SET u_name="Denis", u_surname="Gregoriev" WHERE u_id=1;

@@ -1,0 +1,1 @@
+SELECT t_name, t_priority FROM tasks;
