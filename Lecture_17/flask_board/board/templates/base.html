@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tweets Board - {% block title %}{% endblock title %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Tweets Board</h1>
+        <div class="container text-center">
+            {% include("_navigation.html") %}
+            <section>
+                <header>
+                    {% block header %}{% endblock header %}
+                </header>
+                <main>
+                    {% block content %}<p>No tweets.</p>{% endblock content %}
+                </main>
+            </section>
+        </div>
+    </div>
+
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</body>
+</html>
